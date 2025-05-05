@@ -1,5 +1,3 @@
-import React from 'react';
-
 const FilterAndSort = ({ filters, onFilterChange, onSortChange }: any) => {
     return (
         <div className="filters mb-4">

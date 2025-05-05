@@ -1,5 +1,3 @@
-import React from 'react';
-
 const ProductCard = ({ product, onAddToCart }: { product: any, onAddToCart: () => void }) => {
     return (
         <div className="product-card p-4 border rounded">

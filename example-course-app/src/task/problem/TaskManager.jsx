@@ -1,5 +1,11 @@
 import { useState } from 'react';
 
+
+// Oppgave:
+// 1) Les og forstå komponenten nedenfor.
+// 2) Skriv ansvarlighetene til komponenten i en liste.
+// 3) Refactor komponenten, lag nye komponenter/hook i "solution" mappen. Bruk alle 3 prinsippene.
+
 function TaskManager() {
     const [tasks, setTasks] = useState([]);
     const [input, setInput] = useState('');

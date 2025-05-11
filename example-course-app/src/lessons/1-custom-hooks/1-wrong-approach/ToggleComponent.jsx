@@ -13,5 +13,3 @@ function ToggleComponent() {
         </div>
     );
 }
-
-export default ToggleComponent;

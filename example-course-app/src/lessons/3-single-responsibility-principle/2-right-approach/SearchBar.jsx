@@ -1,13 +1,13 @@
 import SearchInput from './SearchInput';
-import SearchResults from './SearchResults';
+import SearchResults from './SearchResults.jsx';
 import {useSearch} from "./useSearch.js";
 
 export default function SearchBar({ items }) {
-    const { query, results, onQueryChange } = useSearch(items);
+    const { query, results, handleSearch } = useSearch(items);
 
     return (
         <div>
-            <SearchInput query={query} onChange={onQueryChange} />
+            <SearchInput query={query} onChange={handleSearch} />
             <SearchResults results={results} />
         </div>
     );

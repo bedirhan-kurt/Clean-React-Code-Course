@@ -4,7 +4,7 @@ export function useSearch(items) {
     const [query, setQuery] = useState('');
     const [results, setResults] = useState(items);
 
-    const handleQueryChange = (value) => {
+    const handleSearch = (value) => {
         setQuery(value);
         const filtered = items.filter(item =>
             item.toLowerCase().includes(value.toLowerCase())
@@ -12,5 +12,5 @@ export function useSearch(items) {
         setResults(filtered);
     };
 
-    return { query, results, onQueryChange: handleQueryChange };
+    return { query, results, handleSearch };
 }

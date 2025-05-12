@@ -16,15 +16,11 @@ export default function FilteredItemList() {
         );
     }
 
-    return <FilteredItemElements items={items} />;
-}
-
-function FilteredItemElements({items}) {
     return (
         <div className="h-full w-1/3 p-0 flex flex-col gap-2 overflow-y-auto flex-grow">
             {items.map(item => (
                 <ItemCard key={item.id} item={item} />
             ))}
         </div>
-    )
+    );
 }
